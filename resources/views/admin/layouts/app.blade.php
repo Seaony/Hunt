@@ -1,6 +1,6 @@
 @extends('admin.layouts.basic')
 
-@section('title','Admin')
+@section('title','后台管理')
 
 @section('body')
     <div class="wrapper">
