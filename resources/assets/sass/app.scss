@@ -638,6 +638,20 @@ html, body {
         }
       }
     }
+    .empty-box {
+      color: #BDCDDE;
+      font-size: 20px;
+      margin: 80px auto;
+      text-align: center;
+      font-weight: 300;
+      span {
+        display: block;
+        .fa {
+          font-size: 50px;
+          margin-bottom: 25px;
+        }
+      }
+    }
   }
   .tag-nav {
     ul {
@@ -809,5 +823,8 @@ html, body {
   }
   &::-webkit-scrollbar {
     display: none;
+  }
+  .statistics {
+    opacity: 0;
   }
 }

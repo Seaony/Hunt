@@ -3,7 +3,7 @@
 @section('body')
     <div class="container">
         <div class="row categorys">
-            @foreach($triggers as $trigger)
+            @forelse($triggers as $trigger)
                 <div class="col-md-3">
                     <div class="card" data-toggle="{{ $trigger->form ? 'tooltip' : '' }}" title="From『 {{ $trigger['form'] }} 』">
                         <a href="{{ route('triggers.target',['trigger' => $trigger->id]) }}" target="_blank" class="incrment">
@@ -34,7 +34,12 @@
                         </div>
                     </div>
                 </div>
-            @endforeach
+            @empty
+                <p class="empty-box">
+                    <span><i class="fa fa-gift"></i></span>
+                    <span>你还没有在盒子里放糖果哦。</span>
+                </p>
+            @endforelse
         </div>
     </div>
 @stop

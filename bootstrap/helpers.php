@@ -100,3 +100,13 @@ function favorite($trigger_id)
 {
     return app(\App\Models\Favorite::class)->isFavorite($trigger_id);
 }
+
+/**
+ * 读取自定义配置
+ *
+ * @param $config_name
+ */
+function hunt($config_name)
+{
+    return config("hunt.{$config_name}");
+}

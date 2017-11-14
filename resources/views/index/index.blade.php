@@ -6,7 +6,7 @@
             <h1 class="logo"></h1>
             <p class="pull-left">{{ poem() }}</p>
             <input type="text" class="form-control search-card" placeholder="Please input keyword...">
-            <a class="btn btn-link trigger" iframeurl="{{ route('triggers.show') }}"><i class="fa fa-gift"></i>我的收藏</a>
+            <a class="btn btn-link trigger" iframeurl="{{ route('triggers.show') }}"><i class="fa fa-gift"></i>我的盒子</a>
         </div>
         <div class="row index">
             @foreach($categorys as $category)

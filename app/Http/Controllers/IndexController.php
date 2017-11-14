@@ -10,7 +10,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $categorys = cache()->remember('categorys',30,function(){
+        $categorys = cache()->remember('categorys',10,function(){
             return Category::active()->sort()->get();
         });
         return view('index.index',compact('categorys'));
@@ -18,7 +18,7 @@ class IndexController extends Controller
 
     public function friendships()
     {
-        $friendships = cache()->remember('friend',30,function(){
+        $friendships = cache()->remember('friend',10,function(){
             return Friendship::active()->get();
         });
         return view('index.friendships',compact('friendships'));

@@ -22324,6 +22324,26 @@ body .categorys .card .card-footer .active {
   color: #000;
 }
 
+html .categorys .empty-box,
+body .categorys .empty-box {
+  color: #BDCDDE;
+  font-size: 20px;
+  margin: 80px auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+html .categorys .empty-box span,
+body .categorys .empty-box span {
+  display: block;
+}
+
+html .categorys .empty-box span .fa,
+body .categorys .empty-box span .fa {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
 html .tag-nav ul li,
 body .tag-nav ul li {
   list-style: none;
@@ -22571,5 +22591,10 @@ body .about .links h3 .fa {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+}
+
+html .statistics,
+body .statistics {
+  opacity: 0;
 }
 
