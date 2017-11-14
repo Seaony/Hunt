@@ -1,0 +1,290 @@
+.iconpicker-popover.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  max-width: none;
+  padding: 1px;
+  text-align: left;
+  width: 216px;
+  background: #f7f7f7;
+  &.top, &.topLeftCorner, &.topLeft, &.topRight, &.topRightCorner {
+    margin-top: -10px;
+  }
+  &.right, &.rightTop, &.rightBottom {
+    margin-left: 10px;
+  }
+  &.bottom, &.bottomRightCorner, &.bottomRight, &.bottomLeft, &.bottomLeftCorner {
+    margin-top: 10px;
+  }
+  &.left, &.leftBottom, &.leftTop {
+    margin-left: -10px;
+  }
+  &.inline {
+    margin: 0 0 12px 0;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    max-width: 100%;
+    box-shadow: none;
+    z-index: auto;
+    vertical-align: top;
+    > .arrow {
+      display: none;
+    }
+  }
+}
+
+.dropdown-menu {
+  .iconpicker-popover.inline {
+    margin: 0;
+    border: none;
+  }
+  &.iconpicker-container {
+    padding: 0;
+  }
+}
+
+.iconpicker-popover {
+  &.popover {
+    .popover-title {
+      padding: 12px;
+      font-size: 13px;
+      line-height: 15px;
+      border-bottom: 1px solid #ebebeb;
+      background-color: #f7f7f7;
+      input[type=search].iconpicker-search {
+        margin: 0 0 2px 0;
+      }
+    }
+    .popover-title-text ~ input[type=search].iconpicker-search {
+      margin-top: 12px;
+    }
+    .popover-content {
+      padding: 0px;
+      text-align: center;
+    }
+  }
+  .popover-footer {
+    float: none;
+    clear: both;
+    padding: 12px;
+    text-align: right;
+    margin: 0;
+    border-top: 1px solid #ebebeb;
+    background-color: #f7f7f7;
+    &:before {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    .iconpicker-btn {
+      margin-left: 10px;
+    }
+    input[type=search].iconpicker-search {
+      margin-bottom: 12px;
+    }
+  }
+  &.popover {
+    > .arrow {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      &:after {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 10px;
+        content: "";
+      }
+      border-width: 11px;
+    }
+    &.top > .arrow, &.topLeft > .arrow, &.topRight > .arrow {
+      left: 50%;
+      margin-left: -11px;
+      border-bottom-width: 0;
+      border-top-color: #999;
+      border-top-color: rgba(0, 0, 0, 0.25);
+      bottom: -11px;
+    }
+    &.top > .arrow:after, &.topLeft > .arrow:after, &.topRight > .arrow:after {
+      content: " ";
+      bottom: 1px;
+      margin-left: -10px;
+      border-bottom-width: 0;
+      border-top-color: #fff;
+    }
+    &.topLeft > .arrow {
+      left: 8px;
+      margin-left: 0;
+    }
+    &.topRight > .arrow {
+      left: auto;
+      right: 8px;
+      margin-left: 0;
+    }
+    &.right > .arrow, &.rightTop > .arrow, &.rightBottom > .arrow {
+      top: 50%;
+      left: -11px;
+      margin-top: -11px;
+      border-left-width: 0;
+      border-right-color: #999;
+      border-right-color: rgba(0, 0, 0, 0.25);
+    }
+    &.right > .arrow:after, &.rightTop > .arrow:after, &.rightBottom > .arrow:after {
+      content: " ";
+      left: 1px;
+      bottom: -10px;
+      border-left-width: 0;
+      border-right-color: #fff;
+    }
+    &.rightTop > .arrow {
+      top: auto;
+      bottom: 8px;
+      margin-top: 0;
+    }
+    &.rightBottom > .arrow {
+      top: 8px;
+      margin-top: 0;
+    }
+    &.bottom > .arrow, &.bottomRight > .arrow, &.bottomLeft > .arrow {
+      left: 50%;
+      margin-left: -11px;
+      border-top-width: 0;
+      border-bottom-color: #999;
+      border-bottom-color: rgba(0, 0, 0, 0.25);
+      top: -11px;
+    }
+    &.bottom > .arrow:after, &.bottomRight > .arrow:after {
+      content: " ";
+      top: 1px;
+      margin-left: -10px;
+      border-top-width: 0;
+      border-bottom-color: #fff;
+    }
+    &.bottomLeft > .arrow {
+      &:after {
+        content: " ";
+        top: 1px;
+        margin-left: -10px;
+        border-top-width: 0;
+        border-bottom-color: #fff;
+      }
+      left: 8px;
+      margin-left: 0;
+    }
+    &.bottomRight > .arrow {
+      left: auto;
+      right: 8px;
+      margin-left: 0;
+    }
+    &.left > .arrow, &.leftBottom > .arrow, &.leftTop > .arrow {
+      top: 50%;
+      right: -11px;
+      margin-top: -11px;
+      border-right-width: 0;
+      border-left-color: #999;
+      border-left-color: rgba(0, 0, 0, 0.25);
+    }
+    &.left > .arrow:after, &.leftBottom > .arrow:after, &.leftTop > .arrow:after {
+      content: " ";
+      right: 1px;
+      border-right-width: 0;
+      border-left-color: #fff;
+      bottom: -10px;
+    }
+    &.leftBottom > .arrow {
+      top: 8px;
+      margin-top: 0;
+    }
+    &.leftTop > .arrow {
+      top: auto;
+      bottom: 8px;
+      margin-top: 0;
+    }
+  }
+}
+
+.iconpicker {
+  position: relative;
+  text-align: left;
+  text-shadow: none;
+  line-height: 0;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+  }
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .iconpicker-items {
+    position: relative;
+    clear: both;
+    float: none;
+    padding: 12px 0 0 12px;
+    background: #fff;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 49px;
+    max-height: 246px;
+    &:before {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  }
+  .iconpicker-item {
+    float: left;
+    width: 14px;
+    height: 14px;
+    padding: 12px;
+    margin: 0 12px 12px 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    box-shadow: 0 0 0 1px #ddd;
+    color: inherit;
+    &:hover:not(.iconpicker-selected) {
+      background-color: #eee;
+    }
+    &.iconpicker-selected {
+      box-shadow: none;
+      color: #fff;
+    }
+  }
+}
+
+.iconpicker-component {
+  cursor: pointer;
+}
