@@ -166,7 +166,7 @@ return [
             ],
         ],
         'upload' => [
-            'file' => 'required|mimes:jpeg,bmp,jpg,png,svg|between:1, 6000'
+            'file' => 'required|mimes:jpeg,bmp,jpg,png,svg|between:0, 6000'
         ],
     ],
 ];
