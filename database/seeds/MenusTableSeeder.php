@@ -21,6 +21,15 @@ class MenusTableSeeder extends Seeder
             ]
         );
 
+        Menu::create(
+            [
+                'name'     => '跳转记录',
+                'describe' => '跳转记录',
+                'icon'     => 'fa-paper-plane',
+                'slug'     => 'admin.targets.index',
+            ]
+        );
+
         $cog = Menu::create(
             [
                 'name'     => '站点设置',

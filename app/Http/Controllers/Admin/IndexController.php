@@ -2,6 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Category;
+use App\Models\Nominate;
+use App\Models\Proposal;
+use App\Models\Tag;
+use App\Models\Target;
+use App\Models\Trigger;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Exceptions\ValidatorException;
@@ -11,7 +17,14 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('admin.index.index');
+        $data                    = [];
+        $data['tags_count']      = Tag::count();
+        $data['targets_count']   = Target::count();
+        $data['triggers_count']  = Trigger::count();
+        $data['categorys_count'] = Category::count();
+        $data['proposals'] = Proposal::all();
+        $data['nominates'] = Nominate::all();
+        return view('admin.index.index',$data);
     }
 
     public function upload(Request $request)

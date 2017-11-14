@@ -15,4 +15,9 @@ class Target extends Model
     {
         return json_decode($agents, true);
     }
+
+    public function trigger()
+    {
+        return $this->belongsTo(Trigger::class);
+    }
 }

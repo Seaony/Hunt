@@ -48,12 +48,15 @@ Route::name('admin.')->group(function() {
             $router->delete('friendships/batch', 'FriendshipsController@batch')->name('friendships.batch');
             $router->resource('friendships', 'FriendshipsController');
 
+            $router->delete('tags/batch', 'TagsController@batch')->name('tags.batch');
+            $router->resource('tags', 'TagsController');
+
+            $router->delete('targets/batch', 'TargetsController@batch')->name('targets.batch');
+            $router->resource('targets', 'TargetsController');
+
             $router->resource('proposals', 'ProposalsController');
 
             $router->resource('nominates', 'NominatesController');
-
-            $router->delete('tags/batch', 'TagsController@batch')->name('tags.batch');
-            $router->resource('tags', 'TagsController');
         }
     );
 });

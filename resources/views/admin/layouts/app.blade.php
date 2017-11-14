@@ -23,8 +23,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             @can('admin.users.edit')
-                                <li><a href="{{ route('admin.users.edit',['user' => auth()->user()->id]) }}"><i
-                                                class="fa fa-cog"></i>设置</a></li>
+                                <li><a href="{{ route('admin.users.edit',['user' => auth()->user()->id]) }}"><i class="fa fa-cog"></i>设置</a></li>
                             @endcan
                             @can('admin.auth.logout')
                                 <li><a href="{{ route('admin.auth.logout') }}" id="logout"><i class="fa fa-sign-out"></i> 注销</a></li>
@@ -39,7 +38,6 @@
                     <li class="pull-right">
                         <a href="{{ route('admin.examples') }}" id="cache-clear"><i class="fa fa-bookmark"></i></a>
                     </li>
-
                 </ul>
                 @yield('main')
             </section>
