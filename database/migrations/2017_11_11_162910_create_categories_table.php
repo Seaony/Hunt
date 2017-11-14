@@ -18,7 +18,6 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->string('cover');
             $table->string('describe');
-            $table->integer('trigger_count')->default(0);
             $table->integer('weight')->default(0);
             $table->boolean('is_active')->default(true);
             $table->timestamps();

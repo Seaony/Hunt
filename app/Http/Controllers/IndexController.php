@@ -11,7 +11,7 @@ class IndexController extends Controller
     public function index()
     {
         $categorys = cache()->remember('categorys',10,function(){
-            return Category::active()->sort()->get();
+            return Category::active()->sort()->withCount('triggers')->get();
         });
         return view('index.index',compact('categorys'));
     }

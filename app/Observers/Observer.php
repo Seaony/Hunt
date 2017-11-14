@@ -10,6 +10,5 @@ class Observer
     public static function register()
     {
         User::observe(UserObserver::class);
-        Trigger::observe(TriggerObserver::class);
     }
 }

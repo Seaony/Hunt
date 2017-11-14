@@ -16,7 +16,7 @@
                         <div class="card">
                             <img src="{{ $category->cover }}" class="card-header">
                             <div class="card-content">
-                                <p class="category"><i class="fa fa-bookmark"></i>{{ $category->trigger_count }}</p>
+                                <p class="category"><i class="fa fa-bookmark"></i>{{ $category->triggers_count }}</p>
                                 <h3 class="card-title">{{ $category->name }}</h3>
                             </div>
                             <div class="card-footer">
