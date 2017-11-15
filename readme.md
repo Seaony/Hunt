@@ -1,11 +1,11 @@
 <p align="center">糖果盒子 - WEB 开发者的书签导航</p>
 <br>
-<p align="center"><img src="./doc/bg.svg" width="200px"></p>
+<p align="center"><img src="http://owst2hgsv.bkt.clouddn.com/bg.svg" width="200px"></p>
 <br>
 ---
-<p align="center"><img src="./doc/show.png"></p>
+<p align="center"><img src="http://owst2hgsv.bkt.clouddn.com/show.png"></p>
 <br>
-<p align="center"><img src="./doc/detail.png"></p>
+<p align="center"><img src="http://owst2hgsv.bkt.clouddn.com/detail.png"></p>
 <br>
 
 ## 项目概述
