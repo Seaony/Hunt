@@ -57,7 +57,7 @@
                             @endif
                         </td>
                         <td>{{ $category->weight }}</td>
-                        <td>{{ $category->trigger_count }}</td>
+                        <td>{{ $category->triggers_count }}</td>
                         <td>{{ $category->created_at }}</td>
                         <td>{{ $category->updated_at }}</td>
                         <td>

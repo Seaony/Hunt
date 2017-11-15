@@ -17,7 +17,7 @@ class CategorysController extends Controller
     public function index(Request $request)
     {
         $keyword = $request->get('keyword');
-        $categorys = Category::search($keyword)->paginate(10);
+        $categorys = Category::search($keyword)->withCount('triggers')->paginate(10);
         return view('admin.categorys.index', compact('categorys','keyword'));
     }
 
