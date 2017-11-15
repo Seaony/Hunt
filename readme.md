@@ -5,6 +5,8 @@
 ---
 <p align="center"><img src="./doc/show.png"></p>
 <br>
+<p align="center"><img src="./doc/detail.png"></p>
+<br>
 
 ## 项目概述
 
