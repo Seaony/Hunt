@@ -22281,12 +22281,9 @@ body .categorys .card .card-heading .card-title {
 
 html .categorys .card .card-body,
 body .categorys .card .card-body {
-  padding: 20px 20px 10px;
+  padding: 20px 15px 10px;
   font-weight: 400;
   font-size: 12px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   width: 100%;
   display: inline-block;
   color: #BDCDDE;
